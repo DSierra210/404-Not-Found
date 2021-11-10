@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+}
+
+/* header section */
+
+.error-404 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+}
+
+/* main section */
+
+.scarecrow {
+  width: 90%;
+}
+
+.grid-text h2 {
+  font-weight: 700;
+}
+
+.button {
+  background: #686c70;
+  background-image: -webkit-linear-gradient(top, #686c70, #000000);
+  background-image: -moz-linear-gradient(top, #686c70, #000000);
+  background-image: -ms-linear-gradient(top, #686c70, #000000);
+  background-image: -o-linear-gradient(top, #686c70, #000000);
+  background-image: linear-gradient(to bottom, #686c70, #000000);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: "Space Mono", monospace;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 20px 21px;
+  margin: 27px 0 15px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #131414;
+  background-image: -webkit-linear-gradient(top, #131414, #74787a);
+  background-image: -moz-linear-gradient(top, #131414, #74787a);
+  background-image: -ms-linear-gradient(top, #131414, #74787a);
+  background-image: -o-linear-gradient(top, #131414, #74787a);
+  background-image: linear-gradient(to bottom, #131414, #74787a);
+  text-decoration: none;
+}
+
+/* Footer section */
+
+footer p,
+.footer-link {
+  color: #6c757d;
+  font-size: 0.77rem;
+}
+
+.footer-link:nth-child(2) {
+  text-decoration: none;
+}
+
+/* media queries */
+
+@media (min-width: 280px) {
+  .error-404 {
+    font-size: 1.55rem;
+    margin: 2.5rem 0 6rem 5%;
+  }
+
+  .grid-container,
+  footer {
+    text-align: center;
+  }
+
+  .grid-text {
+    text-align: left;
+    padding: 0 5%;
+  }
+
+  .grid-text h2 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .error-404 {
+    font-size: 2rem;
+  }
+
+  .grid-text h2 {
+    font-size: 2.7rem;
+  }
+
+  .grid-text p {
+    font-size: 1.3rem;
+  }
+
+  footer p,
+  .footer-link {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .error-404 {
+    font-size: 2.3rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-text h2 {
+    font-size: 3rem;
+  }
+
+  .grid-text p {
+    width: 75%;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
